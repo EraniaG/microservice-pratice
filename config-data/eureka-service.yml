@@ -4,3 +4,4 @@ eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
+    default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
