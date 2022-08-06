@@ -11,4 +11,4 @@ eureka:
     instance:
 #      hostname: localhost
 #      para que de un puerto aleatorio
-      hostname-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
