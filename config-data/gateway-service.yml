@@ -17,13 +17,13 @@ spring:
       routes:
         - id: user-service
           uri: lb://user-service
-          predicate:
+          predicates:
             - Path=/users/**
         - id: car-service
             uri: lb://car-service
-            predicate:
+            predicates:
               - Path=/cars/**
         - id: motorcycle-service
             uri: lb://motorcycle-service
-            predicate:
+            predicates:
               - Path=/motos/**
