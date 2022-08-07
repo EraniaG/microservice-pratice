@@ -41,11 +41,13 @@ public class UserService {
     public List<CarDto> getCars(Integer prUserId) {
         return carFeignClient.getCars(prUserId);
 //        return restTemplate.getForObject("http://localhost:8002/cars/user/" + prUserId, List.class);
+//        return restTemplate.getForObject("http://car-service/cars/user/" + prUserId, List.class);
     }
 
     public List<MotorcycleDto> getMotorcycles(Integer prUserId) {
         return motorcycleFeignClient.getMotos(prUserId);
 //        return restTemplate.getForObject("http://localhost:8003/motos/user/" + prUserId, List.class);
+//        return restTemplate.getForObject("http://motorcycle-service/motos/user/" + prUserId, List.class);
     }
 
     public CarDto saveCar(Integer userId, CarDto car) {
