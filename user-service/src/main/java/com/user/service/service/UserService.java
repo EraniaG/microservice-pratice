@@ -67,7 +67,7 @@ public class UserService {
             result.put("user", user);
         }
         result.put("cars", this.getCars(prUserId));
-        result.put("mostos", this.getMotorcycles(prUserId));
+        result.put("motos", this.getMotorcycles(prUserId));
         return result;
     }
 }
